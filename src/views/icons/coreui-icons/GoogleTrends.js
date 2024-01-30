@@ -2,14 +2,14 @@ import React from 'react'
 import { ReactDOM } from 'react'
 import Script from 'react-load-script'
 
-export default function GoogleTrends({ type, keyword, geo, time, url, property }) {
+export default function GoogleTrends({ type, keyword, geo, time, url, property, category }) {
   const handleScriptLoad = (_) => {
     window.trends.embed.renderExploreWidgetTo(
       document.getElementById('widget'),
       type,
       {
         comparisonItem: [{ keyword, geo, time }],
-        category: 0,
+        category: category,
         property: property,
       },
       {

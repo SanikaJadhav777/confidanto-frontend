@@ -3,7 +3,7 @@ import { CCard, CCardBody, CCardHeader, CRow } from '@coreui/react'
 import { freeSet } from '@coreui/icons'
 import { getIconsView } from '../brands/Brands.js'
 import { DocsCallout } from 'src/components'
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './YoyStyles.css'
 import { Helmet } from 'react-helmet'
 import GoogleTrends from './GoogleTrends.js'
@@ -12,6 +12,13 @@ import WidgetsDropdown from 'src/views/widgets/WidgetsDropdown.js'
 import moment from 'moment'
 
 const CoreUIIcons = () => {
+  const dynamic = useRef()
+  const trends = useRef()
+  useEffect(() => {
+    setTimeout(() => {
+      return () => trends.current
+    }, [trends.current])
+  }, [])
   const countryList = require('country-list')
 
   const countries = countryList.getData()
@@ -100,6 +107,12 @@ const CoreUIIcons = () => {
     setCategory(e.target.value)
   }
 
+  let category_selected
+  if (category === 'All Categories') {
+    category_selected = 0
+  } else if (category === 'Arts & Entertainment') {
+    category_selected = 3
+  }
   const searches = [
     'Web Search',
     'Image Search',
@@ -162,9 +175,7 @@ const CoreUIIcons = () => {
     )
   }
 
-  const dynamic = useRef()
-  const trends = useRef()
-  const handleTrends = () => {
+  const handleTrends = (event) => {
     if (dynamic.current.style.visibility == 'visible') {
       dynamic.current.style.visibility = 'hidden'
       dynamic.current.style.display = 'none'
@@ -190,6 +201,7 @@ const CoreUIIcons = () => {
   //const comparison = keywords.map((q) => ({ keyword: q, geo: geo, time: time }))
   const keyword = keywords.join()
   console.log(word)
+
   return (
     <>
       <CCard className="mb-4">
@@ -273,8 +285,9 @@ const CoreUIIcons = () => {
                       keyword={word}
                       geo={geo}
                       time={selected_duration}
-                      property={Property_Selected}
                       url="https://ssl.gstatic.com/trends_nrtr/3601_RC01/embed_loader.js"
+                      property={Property_Selected}
+                      category={category_selected}
                       ref={trends}
                     />
                     <GoogleTrends
@@ -282,8 +295,9 @@ const CoreUIIcons = () => {
                       keyword={word}
                       geo={geo}
                       time={selected_duration}
-                      property={Property_Selected}
                       url="https://ssl.gstatic.com/trends_nrtr/3601_RC01/embed_loader.js"
+                      property={Property_Selected}
+                      category={category_selected}
                       ref={trends}
                     />
                     <GoogleTrends
@@ -291,8 +305,9 @@ const CoreUIIcons = () => {
                       keyword={word}
                       geo={geo}
                       time={selected_duration}
-                      property={Property_Selected}
                       url="https://ssl.gstatic.com/trends_nrtr/3601_RC01/embed_loader.js"
+                      property={Property_Selected}
+                      category={category_selected}
                       ref={trends}
                     />
                     <GoogleTrends
@@ -300,8 +315,9 @@ const CoreUIIcons = () => {
                       keyword={word}
                       geo={geo}
                       time={selected_duration}
-                      property={Property_Selected}
                       url="https://ssl.gstatic.com/trends_nrtr/3601_RC01/embed_loader.js"
+                      property={Property_Selected}
+                      category={category_selected}
                       ref={trends}
                     />
                   </div>
