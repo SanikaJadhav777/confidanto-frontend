@@ -1,0 +1,115 @@
+.header-logo {
+    padding-left: 1rem;
+    padding-top: 0.6rem;
+}
+  
+.header-logo img {
+    width: 234px;
+    height: 46px;
+}
+
+.mx-4{
+    border: none;
+}
+
+.p-4:nth-child(1){
+    border: none;
+}
+
+h1, p{
+    text-align: center;
+}
+
+.bg-light.register {
+    --cui-bg-opacity: 1;
+    background-color: white !important;
+    padding-top: 2.5rem;
+    font-family:"Calibri", sans-serif;
+}
+
+.d-grid{
+    justify-content: center;
+}
+
+.btn-success {
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    --cui-btn-color: #fff;
+    --cui-btn-bg: #1d68c9;
+    --cui-btn-border-color: #1d68c9;
+    --cui-btn-hover-color: #1d68c9;
+    --cui-btn-hover-bg: #fff;
+    --cui-btn-hover-border-color: #1d68c9;
+    --cui-btn-focus-shadow-rgb: 39, 156, 81;
+    --cui-btn-active-color: #fff;
+    --cui-btn-active-bg: #1d68c9;
+    --cui-btn-active-border-color: #1d68c9;
+    --cui-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 21, 0.125);
+    --cui-btn-disabled-color: #000015;
+    --cui-btn-disabled-bg: #79abec;
+    --cui-btn-disabled-border-color: #1d68c9;
+  }
+
+  label {
+    margin-top: 5px;
+  }
+
+  .form-text {
+    font-size: 1rem;
+    color: #000;
+    padding-left: 0.7rem;
+    border: 1px solid var(--cui-border-color);
+    padding-right: 280px;
+    border-radius: var(--cui-border-radius);
+    margin-top: 0;
+  }
+
+  .form-text.additional{
+    font-size: 1rem;
+    color: #000;
+    padding-left: 0.7rem;
+    border: 1px solid var(--cui-border-color);
+    padding-right: 453px;
+    border-radius: var(--cui-border-radius);
+    margin-top: 0;
+  }
+
+  .form-check-label{
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+
+  html:not([dir="rtl"]) .form-check .form-check-input {
+    margin-left: 0;
+  }
+
+.form-check-input{
+    border: 1px solid #000
+}
+
+html:not([dir="rtl"]) .form-check {
+    padding-left: 2.5em;
+}
+
+.multi-select{
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+}
+
+#endDate{
+  margin-left: 5px;
+}
+
+.goal-div{
+  display: flex;
+  margin-left: 40px;
+}
+
+.goal-div input{
+  margin-left: 10px;
+  margin-right: 2px;
+}
+  
+

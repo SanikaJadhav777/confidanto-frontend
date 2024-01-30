@@ -1,0 +1,31 @@
+/*.sidebar-nav{
+    background-color: #fff;
+    color: #000;
+}
+
+.sidebar-nav .nav-link{
+    color: #000;
+}
+
+.sidebar-nav .nav-link:hover{
+    color: #fff;
+    background-color: #3c4b64;
+}
+
+.sidebar-nav .nav-link.active{
+    color: #000;
+}
+
+.sidebar-nav .nav-link .nav-icon{
+    color: #000;
+}
+
+
+.sidebar-nav .nav-link.active .nav-icon{
+    color: #000;
+}
+
+.sidebar-nav .nav-title{
+    color: #000;
+}
+*/

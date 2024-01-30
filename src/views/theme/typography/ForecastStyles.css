@@ -1,0 +1,50 @@
+.downloadbtnf {
+    position: relative;
+    flex: 1 1 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(
+      to right,
+      #314755 0%,
+      #26a0da 51%,
+      #314755 100%
+    );
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 800;
+  }
+  
+  .downloadbtnf:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+  }
+
+  /*.info{
+    visibility: hidden;
+    display: none;
+  }*/
+
+  .info{
+    padding-left: 0.4rem ;
+    background-color: #f8f8f8;
+  }
+
+  .info label{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .info label:nth-child(2){
+    float: right;
+    padding-right: 0.4rem;
+  }

@@ -1,0 +1,71 @@
+.edit-div{
+    display: flex;
+    flex-direction: row;
+}
+
+h2{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.edit-icon{
+    font-size: 1.3rem;
+}
+
+.bg-primary{
+    height: 90%;
+}
+
+.bg-info{
+    height: 90%;
+}
+
+.bg-warning{
+    height: 90%;
+}
+
+.bg-danger{
+    height: 90%;
+}
+
+.multi{
+    display: none;
+    visibility: hidden;
+}
+
+#multi-select{
+    font-size: 0.9rem;
+    color: #000;
+}
+
+.first-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.date_pick {
+    display: flex;
+    flex-direction: row;
+}
+
+.date_pick{
+    visibility: 'hidden';
+    display: none
+}
+
+.date_pick input{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.platform-header h2{
+    background-color: #4b486a;
+  text-align: center;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  color: #f9f3f5;
+  font-family: Calibri;
+}
+
+

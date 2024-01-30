@@ -1,0 +1,35 @@
+.info{
+    background-color: transparent;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    padding-left: 1.5rem;
+  }
+  
+  .info label{
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 600;
+  font-family: "Calibri";
+  }
+  
+  .info label:nth-child(3){
+    padding-left: 2rem;
+  }
+  .info label:nth-child(6){
+    padding-left: 2rem;
+  }
+  .info label:nth-child(9){
+    padding-left: 2rem;
+  }
+  .info label:nth-child(12){
+    padding-left: 2rem;
+  }
+  
+  
+  .info button{
+    background: transparent;
+    font-size: 0.9rem;
+    border: none;
+    color: #000;
+    cursor: pointer;
+  }
