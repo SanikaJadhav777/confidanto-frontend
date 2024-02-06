@@ -1,0 +1,18 @@
+.verify-logo {
+    width: 420px;
+    height: 367px;
+}
+
+.bg-light.confirm-account{
+    --cui-bg-opacity: 1;
+    background-color: white !important;
+    padding-top: 5rem;
+}
+
+.confirm-account{
+    text-align: center;
+}
+
+.confirm-account label {
+    font-size: 1.5rem;
+}

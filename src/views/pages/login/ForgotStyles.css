@@ -1,0 +1,48 @@
+.forgot-class, .reset-class{
+    padding: 3rem 1rem 1rem 1.3rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forgot-class .input-group
+{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  padding: 2rem 2.5rem;
+}
+
+.forgot-class h1{
+    font-size: 2rem;
+}
+
+.forgot-class a{
+    padding: 0.5rem 2rem;
+}
+
+.reset-class .input-group
+{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  padding: 0.5rem 2.5rem;
+}
+
+.reset-class h1{
+    font-size: 2rem;
+}
+
+.reset-class #login_para{
+    text-align: center;
+}
+
+.reset-class a{
+    padding: 0.5rem 2rem;
+}
+
+.bottom-links label:nth-child(2) {
+    float: right;
+}

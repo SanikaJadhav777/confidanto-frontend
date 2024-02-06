@@ -1,0 +1,6 @@
+.bg-light
+{
+  --cui-bg-opacity: 1;
+  background-color: white !important;
+  padding-top: 0;
+}
